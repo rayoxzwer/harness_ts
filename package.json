@@ -1,0 +1,37 @@
+{
+  "name": "harness_codeEval",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc",
+    "bench": "tsx src/run-benchmarks.ts",
+    "start": "tsx src/harness.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.18.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "execa": "^7.1.1",
+    "groq-sdk": "^1.4.1",
+    "pg": "^8.22.0",
+    "vitest": "^4.1.10",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "@types/pg": "^8.20.0",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
+  }
+}
